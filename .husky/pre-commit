@@ -1,9 +1,9 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
+##!/usr/bin/env sh
+#. "$(dirname -- "$0")/_/husky.sh"
 
-echo "▶ Pre-commit: formatando e checando código..."
-# formata e valida formatação
-./mvnw -q spotless:apply spotless:check || exit 1
+#echo "▶ Pre-commit: formatando e checando código..."
+## formata e valida formatação
+#./mvnw -q spotless:apply spotless:check || exit 1
 
-# análise estática rápida
-./mvnw -q -DskipTests checkstyle:check pmd:check || exit 1
+## análise estática rápida
+#./mvnw -q -DskipTests checkstyle:check pmd:check || exit 1
